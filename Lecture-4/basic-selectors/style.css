@@ -1,0 +1,57 @@
+/* element selectors */
+
+/* h1{
+    color: red;
+}
+h2{
+    color:  red;
+} */
+
+/* h1 , h2 , h3 , h4{ 
+    color: red;
+} */
+
+/* ----------------------- */
+
+/* id selector => single element */
+/* #samarth{
+    color: blue;
+    border: 5px dashed black;
+} */
+
+/* #vohra{
+    color: orange;
+}
+h2{
+    color: pink;
+} */
+
+/* ----------------------- */
+/* class selector => multiple elements */
+/* .sammy{
+    color: darkviolet;
+} */
+
+
+/* ----------------------- */
+/* attribute selector */
+
+input[type="text"]{
+    background-color: orange;
+    font-size: 100px;
+}
+a[href="http://google.com"]{
+    color: pink;
+    border: 2px solid black;
+}
+
+
+/* ----------------------- */
+/* universal selector => everything (html , body...) */
+
+/* *{
+    border: 1px solid black;
+} */
+
+
+

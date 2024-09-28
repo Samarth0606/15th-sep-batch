@@ -1,0 +1,11 @@
+h1{
+    color: orange;
+    background-color: lightcyan;
+    font-size: 50px;
+}
+h2{
+    color: lightcoral;
+    /* border: 15px solid black;    solid , dashed , dotted */
+    /* border: 15px dashed black;    solid , dashed , dotted */
+    border: 15px dotted red;    /*solid , dashed , dotted*/
+}

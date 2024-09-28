@@ -1,0 +1,22 @@
+/* descenedant */
+/* section div span{}  */
+
+/* ----------------------- */
+
+/*  child  */
+/* section > article > div > p > span{}  */
+
+/* ----------------------- */
+
+/* adjacent sibling */
+h1 + p{
+    color: red;
+}
+
+
+/* ----------------------- */
+
+/* general sibling */
+h1 ~ p{
+    color: red;
+}

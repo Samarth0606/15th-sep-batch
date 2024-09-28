@@ -1,0 +1,16 @@
+h1{
+    /* rgb way-1 */
+    color: rgb(255,0,128);
+}
+
+h2{
+    /* rgba(alpha channel => (0-1) way-2 */
+    /* color: rgba(255,0,128,1); */
+    color: rgba(255,0,128,1);
+}
+h3{
+    /* hexadecimal way-3 */
+    color: #8f205c ;      /* only 6  2each (r g b) */
+    color: #8f205c66  ;   /* only 8  2each (r g b) + alpha channel(0-f) */
+}
+
