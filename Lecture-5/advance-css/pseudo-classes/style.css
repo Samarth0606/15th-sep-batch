@@ -1,0 +1,71 @@
+
+
+/* div{
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    background-color: orange;
+} */
+
+/* hover */
+/* div:hover{
+    background-color: blue;
+    border-radius: 50%;
+} */
+
+/* focus */
+/* input{
+    background-color: orange;
+}
+
+input:focus{
+    background-color: lightcoral;
+} */
+
+
+/* active */
+/* a{
+    color: red;
+    font-size: 50px;
+}
+
+a:active{
+    color: chartreuse;
+    font-size: 100px;
+} */
+
+/* visited */
+
+/* a:visited{
+    color: red;
+    background-color: yellow;
+    font-size: 100px;
+} */
+
+
+/* nth-of-type */
+
+
+li:nth-of-type(5),
+li:nth-of-type(7),
+li:nth-of-type(9)
+{
+    color: red;
+}
+
+/* ---even--- */
+
+li:nth-of-type(even){
+    border: 2px solid black;
+}
+
+
+
+/* ---odd--- */
+
+li:nth-of-type(odd){
+    border: 2px solid red;
+}
+
+
+

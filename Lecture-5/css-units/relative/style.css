@@ -1,0 +1,56 @@
+/* div{
+    background-color: blue;
+} */
+
+
+/* %(percentage) => dependant on the parents availability */
+/* body{
+    background-color: chartreuse;
+}
+section{
+    width: 50%;
+    background-color: blue;
+}
+
+div{
+    width: 50%;
+    background-color: red;
+} */
+
+
+/* ---------------------------------- */
+
+/* for inheritance */
+/* article{ */
+    /* ❌ */
+    /* border: 1px solid black;  */
+
+    /* ✅ */
+    /* color: red; */
+    /* font-size: 50px; */
+    /* background-color: lightblue; */
+/* } */
+
+
+/* em (snowball effect) */
+
+/* ul > li{
+    font-size: 2em;
+} */
+
+
+/* rem (root -> html (16px) ) */
+/* ul > li{
+    font-size: 2rem;
+} */
+
+
+/* vh (viewport height) & vw (viewport width) */
+
+/* section{
+    background-color: purple;
+    width: 50vw;
+    height: 50vh;
+} */
+
+

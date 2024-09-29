@@ -1,0 +1,26 @@
+p::first-letter{
+    font-size: 100px;
+    color: burlywood;
+}
+
+
+p::first-line{
+    font-family: cursive;
+}
+
+h1::after{
+    /* content: " Samarth"; */
+    content: "\1F973";
+}
+/* unicode of .... */
+h1::before{
+    content: "\1F48C";
+}
+
+li{
+    list-style: none;
+}
+
+li::before{
+    content: "\1F48C";
+}
