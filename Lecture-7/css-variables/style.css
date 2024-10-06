@@ -1,0 +1,18 @@
+:root{
+    --bg-color-red: #dd4d34;
+    --bg-color-green: #44ff0a;
+    --font-size-bada:100px
+}
+
+h1{
+    background-color: var(--bg-color-red);
+    font-size: var(--font-size-bada);
+}
+
+h2{
+    background-color: var(--bg-color-red);
+}
+
+h3{
+    background-color: var(--bg-color-green);
+}
