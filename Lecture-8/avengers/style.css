@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+}
+
+
+:root{
+    --min-color: #fff;
+    --sc-color: #fa0000;
+    --th-color: #333;
+}
+html{
+    font-size: 70%;
+}
+
+body{
+    background-color: #000;
+}
+
+.heading{
+    text-align: center;
+    color: var(--min-color);
+    font-size: 4.2rem;
+    margin: 4rem 0;
+}
+
+section{
+    padding: 5rem 10%;
+}
+
+
+.btn{
+    display: inline-block;
+    font-size: 2rem;
+    border: 0.2rem solid var(--sc-color);
+    outline: 0;
+    background-color: var(--sc-color);
+    color: var(--min-color);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.btn:hover{
+    background: none;
+    color: var(--sc-color);
+}
+header{
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    z-index: 1000000;
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+header .logo{
+    padding: 0.2rem;
+    font-size: 3.5rem;
+    color: var(--min-color);
+}
+header .logo span{
+    color: var(--sc-color);
+    font-size: 4.5rem;
+    font-weight: bolder;
+}
+
+header .navbar a{
+    margin: 0 0.8rem;
+    font-size: 2rem;
+    color: var(--min-color);
+    padding: 0.4rem;
+}
+
+header .navbar a:hover,
+header .fa-bars:hover{
+    padding: 1rem;
+    color: var(--sc-color);
+    border-bottom: 0.1 solid var(--sc-color) ;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+    color: var(--min-color);
+}
+
+
+.home .home-slide .box{
+    position: relative;
+}
+
+.home .home-slide .box::before{
+    content: "";
+    background-color: rgba(0, 0, 0,0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.home .home-slide .box .image img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.home .home-slide .box .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--min-color);
+    text-align: center;
+}
+
+.home .home-slide .box .content h3{
+   font-size: 4rem;
+}
+.home .home-slide .box .content p{
+    font-size: 2.5rem;
+}   
+
+/* -------------------------- */
+
+.about .row{
+    display: flex;
+}
+
+.about .row .image img{
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
+}
+.about .row .image .content{
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    width: 60%;
+}
+.about .row .image h3{
+    padding: 4rem;
+    margin: 2rem;
+}
+.about .row .image p{
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+img{
+    width: 100px !important;
+    height: 100px !important;
+}
+
+
