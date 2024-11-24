@@ -84,3 +84,32 @@ h1{
     top: 18%;
     right: 18%;
 }
+
+/* not allowed to reclick */
+.x , .circle{
+    cursor:not-allowed;
+}
+
+
+/* -------------------------------------------------- */
+
+.winner-message{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 3rem;
+    gap: 10px;
+}
+button{
+    font-size: 3.5rem;
+    padding: 0.25rem 0.75rem;
+}
+
+.winner-message.show{
+    display: flex;
+}
