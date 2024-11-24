@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cell-size: 100px;
+    --mark-size:calc( var(--cell-size) * 0.9 )
+}
+
+h1{
+    text-align: center;
+}
+.board{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3 , auto);
+    justify-content: center; 
+    align-content: center;
+}
+
+.cell{
+    height: var(--cell-size);
+    width: var(--cell-size);
+    border: 1px solid black;
+    position: relative;
+}
+
+/* removing extra border */
+
+.cell:first-child , .cell:nth-child(2),.cell:nth-child(3){
+    border-top: none;
+}
+.cell:last-child , .cell:nth-child(7),.cell:nth-child(8){
+    border-bottom: none;
+}
+.cell:nth-child(3n+3){
+    border-right: none;
+}
+.cell:nth-child(3n+1){
+    border-left: none;
+}
+
+/* -------------------------------------------------- */
+/* x */
+.x::before , .x::after{
+    content: "";
+    position: absolute;
+    height: var(--mark-size) ;
+    width: calc( var(--cell-size) * 0.15 );
+    top: 5%;
+    right: 45%;
+
+    background-color: black;
+}
+
+.x::before{
+    transform: rotate(45deg);
+}
+
+.x::after{
+    transform: rotate(-45deg);
+}
+
+/* -------------------------------------------------- */
+/* circle */
+
+.circle::before , .circle::after{
+    content: "";
+    position: absolute;
+    height: var(--mark-size);
+    width: var(--mark-size);
+    border-radius: 50%;
+    background-color: black;
+    top: 5%;
+    right: 4%;
+}
+
+.circle::after{
+    background-color: white;
+    height: calc(var(--mark-size)*0.7) ;
+    width: calc(var(--mark-size)*0.7) ;
+    top: 18%;
+    right: 18%;
+}
